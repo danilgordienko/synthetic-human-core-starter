@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 
-@Component
+//@Component
 @RequiredArgsConstructor
 public class AndroidMetrics {
 

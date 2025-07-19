@@ -1,7 +1,6 @@
 package ru.danilgordienko.synthetic_human_core_starter.CommandModule;
 
 
-import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -9,7 +8,7 @@ import ru.danilgordienko.synthetic_human_core_starter.MonitoringModule.AndroidMe
 
 import java.util.concurrent.ExecutorService;
 
-@Service
+//@Service
 @RequiredArgsConstructor
 @Slf4j
 public class CommandHandler {

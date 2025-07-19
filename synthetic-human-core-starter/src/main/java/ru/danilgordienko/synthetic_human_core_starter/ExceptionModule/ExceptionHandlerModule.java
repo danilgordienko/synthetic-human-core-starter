@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.stream.Collectors;
 
-@ControllerAdvice
+//@ControllerAdvice
 @Slf4j
 public class ExceptionHandlerModule {
 

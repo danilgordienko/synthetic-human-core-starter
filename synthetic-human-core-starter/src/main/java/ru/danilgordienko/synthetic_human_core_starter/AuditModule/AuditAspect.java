@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 @Aspect
 @Slf4j
-@Component
+//@Component
 public class AuditAspect {
 
     @Around("@annotation(ru.danilgordienko.synthetic_human_core_starter.AuditModule.WeylandWatchingYou)")
