@@ -16,7 +16,6 @@ public class AuditAspect {
 
     @Around("@annotation(ru.danilgordienko.synthetic_human_core_starter.AuditModule.WeylandWatchingYou)")
     public Object aroundAdvice(ProceedingJoinPoint pjp) throws Throwable {
-        System.out.println("aroundAdvice triggered");
         String methodName = pjp.getSignature().getName();
         Object[] methodArgs = pjp.getArgs();
         Object result = pjp.proceed();

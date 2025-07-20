@@ -18,6 +18,7 @@ public class BishopPrototypeController {
     private final CommandHandler commandHandler;
     private final BishopPrototypeService bishopPrototypeService;
 
+    // эндпоинт для теста командного модуля
     @PostMapping
     public ResponseEntity<String> handleCommand(@Valid @RequestBody Command command) {
         log.info("Received command {}", command);
@@ -26,9 +27,10 @@ public class BishopPrototypeController {
         return ResponseEntity.ok("Command executed");
     }
 
+    //эндпоинт для теста аудита
     @GetMapping
     public ResponseEntity<String> test() {
-        bishopPrototypeService.test();
+        bishopPrototypeService.test("Test");
         return ResponseEntity.ok("");
     }
 }
